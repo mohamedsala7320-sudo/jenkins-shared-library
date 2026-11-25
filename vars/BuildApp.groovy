@@ -1,6 +1,6 @@
 def call() {
     echo 'Running unit tests...'
-    sh 'mvn test'
+    sh 'mvn -B test'
     echo 'Building the application...'
-    sh 'mvn clean package -DskipTests'
+    sh 'mvn -B clean package -DskipTests'
 }
